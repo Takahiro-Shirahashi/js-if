@@ -1,10 +1,15 @@
 //console.log(window.confirm('ゲームを開始します'));
 //windowオブジェクトのconfirmメソッドで確認ダイアログボックスを表示している。
-if(window.confirm('このページを読み込みます')){
-  document.getElementById('choose').textContent = 'OKボタンをクリックしました！';
+const you = 'あなたは'
+const ok = 'OKボタンをクリックしました！'
+const ng = 'キャンセルボタンをクリックしました！'
+
+if(window.confirm('OKまたはキャンセルをクリックして下さい')){
+  window.alert(ok)
+  document.getElementById('choose').textContent = you + ok ;
   console.log('OK');
 }
 else {
-  document.getElementById('choose').textContent = 'キャンセルボタンをクリックしました！';
+  document.getElementById('choose').textContent = you + ng ;
   console.log('キャンセル');
 }
