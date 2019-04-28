@@ -10,6 +10,7 @@ if(window.confirm('OKまたはキャンセルをクリックして下さい')){
   console.log('OK');
 }
 else {
+  window.alert(ng)
   document.getElementById('choose').textContent = you + ng ;
   console.log('キャンセル');
 }
